@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true">
+        <TextView
+            android:text="00:00:00"
+            android:id="@+id/rest_timer"
+            android:textSize="40dip"
+            android:gravity="center_horizontal|bottom"
+            android:singleLine="true"
+            android:layout_width="fill_parent"
+            android:layout_height="80dip"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/rest"
+            android:layout_weight="1"
+            android:text="@string/button_rest"
+            android:textSize="18dip"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+
+    </LinearLayout>
+</RelativeLayout>
